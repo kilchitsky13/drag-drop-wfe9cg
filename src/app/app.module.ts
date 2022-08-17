@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
@@ -15,7 +14,6 @@ import { DragHandlerComponent } from './drag-and-drop/drag-handler/drag-handler.
     BrowserModule,
     FormsModule,
     DragDropModule,
-    FlexLayoutModule,
     BrowserAnimationsModule,
   ],
   providers: [DragDropModule],
