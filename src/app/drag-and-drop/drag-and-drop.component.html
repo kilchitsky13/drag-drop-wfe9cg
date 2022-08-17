@@ -1,0 +1,16 @@
+<div class="draggable-group" cdkDropListGroup> 
+    <div 
+        *ngFor="let item of items;let i=index"
+        class="draggable-list-item"
+        cdkDropList 
+        cdkDropListOrientation="horizontal"
+        [cdkDropListData]="i" 
+        (cdkDropListDropped)="drop($event)" >
+        <app-drag-handler cdkDrag text={{item}}>
+            <!-- <div class="example-custom-placeholder" *cdkDragPlaceholder>123</div> -->
+            <div cdkDragHandle></div>
+        </app-drag-handler>
+    </div>
+</div>
+{{items|json}}
+  

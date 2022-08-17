@@ -1,0 +1,9 @@
+.tile-container {
+    width: 100%;
+    text-align: center;
+}
+
+.handler {
+    position: relative;
+    width: 100%;
+}

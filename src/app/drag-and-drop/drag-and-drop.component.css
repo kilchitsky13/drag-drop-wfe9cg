@@ -1,0 +1,48 @@
+.draggable-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+  
+.draggable-list-item {
+  margin: 3px;
+  height: 100px;
+  width: 100px;
+}
+
+.cdk-drag {  
+  display: flex;
+  
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drop-list-dragging > .cdk-drag-placeholder {
+  background: rgba(0, 0, 0, 0.12);
+  border: 2px dashed black;
+}
+
+.cdk-drop-list-dragging > *:not(.cdk-drag-placeholder) {
+  display: none;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}  
+
+.cdk-drag-handle {
+  height: stretch;
+  width: stretch;
+  position: absolute;
+  z-index: 99;
+  background-color: transparent;
+  cursor: move;
+}
