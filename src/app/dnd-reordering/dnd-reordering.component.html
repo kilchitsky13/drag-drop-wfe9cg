@@ -1,0 +1,20 @@
+<h1>With reordering(bugged)</h1>
+
+<div #dropListContainer class="example-container" cdkDropListGroup>
+  <div
+    *ngFor="let item of items; let i = index"
+    cdkDropList
+    [cdkDropListData]="i"
+  >
+    <div
+      cdkDrag
+      [cdkDragData]="i"
+      (cdkDragEntered)="dragEntered($event)"
+      (cdkDragMoved)="dragMoved($event)"
+      (cdkDragDropped)="dragDropped($event)"
+      class="example-box">
+      {{ item }}
+    </div>
+  </div>
+</div>
+

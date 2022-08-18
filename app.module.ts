@@ -7,10 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
 import { DragHandlerComponent } from './drag-and-drop/drag-handler/drag-handler.component';
-import { DndReorderingComponent } from './dnd-reordering/dnd-reordering.component';
 
 @NgModule({
-  declarations: [AppComponent, DragAndDropComponent, DragHandlerComponent, DndReorderingComponent],
+  declarations: [AppComponent, DragAndDropComponent, DragHandlerComponent],
   imports: [
     BrowserModule,
     FormsModule,
